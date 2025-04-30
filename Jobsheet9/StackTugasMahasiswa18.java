@@ -18,7 +18,7 @@ public class StackTugasMahasiswa18 {
     }
   }
   public boolean isEmpty() {
-    if (top == -1) { // no size
+    if (top == -1) { 
       return true;
     } else {
       return false;
@@ -55,5 +55,16 @@ public class StackTugasMahasiswa18 {
         System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
     }
     System.out.println("");
+  }
+  public Mahasiswa18 bottom() {
+    if (!isEmpty()) {
+      return stack[0];
+    } else {
+      System.out.println("Stack kosong! Tidak ada tugas terbawah");
+      return null;
+    }
+  }
+  public int jumlahTugas() {
+    return top + 1;
   }
 }
