@@ -56,7 +56,7 @@ public class StackSurat18 {
           }
       }
       if (!ditemukan) {
-          System.out.println("Surat dari mahasiswa tersebut tidak ditemukan.");
+          System.out.println("Surat dari mahasiswa tersebut tidak ditemukan");
       }
   }
 }
